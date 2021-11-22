@@ -1,0 +1,110 @@
+/* body {
+    font-size: 15px;
+    font-family:  Arial;
+} */
+
+table,
+th,
+td {
+    border: 0px solid black;
+    font-size: 17px;
+    font-family: Arial;
+}
+
+table {
+    border-collapse: collapse;
+    width: -webkit-fill-available;
+    text-align: left;
+}
+
+p {
+    margin: 3px;
+    font-size: 17px;
+    font-family: Arial;
+}
+
+table,
+th,
+td {
+    border: 0px solid black;
+}
+
+#finish {
+    text-align: right;
+}
+
+.xoa {
+    background-color: red;
+    padding: 15px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    will-change: box-shadow;
+    display: inline-block;
+    width: 100px;
+    color: white;
+}
+
+.xoa:hover {
+    background-color: darkred;
+    padding: 15px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    will-change: box-shadow;
+    display: inline-block;
+    color: white;
+    width: 100px;
+}
+
+.dongy {
+    background-color: #26a326;
+    padding: 15px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    will-change: box-shadow;
+    display: inline-block;
+    width: 100px;
+    color: white;
+}
+
+.dongy:hover {
+    background-color: green;
+    padding: 15px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    will-change: box-shadow;
+    display: inline-block;
+    color: white;
+    width: 100px;
+}

@@ -1,0 +1,373 @@
+#header {
+    background-color: #fffcd5;
+    width: 100%;
+    top: 0px;
+    min-height: 70px;
+    position: fixed;
+    color: black;
+    display: flex;
+    z-index: 10;
+}
+
+#header #logo {
+    height: 100%;
+    float: left;
+    margin: auto 10px;
+}
+
+#header #account {
+    float: right;
+    font-size: 100%;
+    color: black;
+    width: 20%;
+    margin: auto 10px auto auto;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+}
+
+#nav {
+    margin: auto;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background: #6b6465;
+}
+
+
+/*----- Phần menu -----*/
+
+.menu {
+    width: 100%;
+    margin: 0px auto;
+    background: transparent;
+}
+
+.menu li {
+    margin: 0px;
+    list-style: none;
+    font-family: Arial;
+}
+
+.menu a {
+    transition: all linear 0.15s;
+    color: #919191;
+    text-decoration: none;
+}
+
+.menu li:hover>a,
+.menu .current-item>a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu .arrow {
+    font-size: 11px;
+    line-height: 0%;
+}
+
+
+/*----- css cho phần menu cha -----*/
+
+.menu>ul>li {
+    display: inline-block;
+    position: relative;
+    font-size: 21px;
+}
+
+.menu>ul>li>a {
+    padding: 10px 40px;
+    display: inline-block;
+    color: black;
+}
+
+.menu>ul>li:hover>a,
+.menu>ul>.current-item>a {
+    background: #2e2728;
+}
+
+
+/*----css cho menu con----*/
+
+.menu li:hover .sub-menu {
+    display: block;
+    z-index: 1;
+    opacity: 1;
+}
+
+.sub-menu {
+    width: 130%;
+    padding: 5px 0px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background: #2e2728;
+}
+
+.sub-menu li {
+    display: block;
+    font-size: 17px;
+}
+
+.sub-menu li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.sub-menu li a:hover,
+.sub-menu a {
+    background: #3e3436;
+}
+
+#footer {
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fffcd5;
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 7px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.topnav #menu {
+    list-style: none;
+    height: 48px;
+    display: none;
+}
+
+
+
+#menu li {
+    text-align: left;
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background-color: #333;
+}
+
+#menu>li {
+    float: left;
+    border-right: 1px solid #fff;
+    position: relative;
+}
+
+#menu>li>ul.dropdown_menu {
+    position: absolute;
+    list-style: none;
+    display: none;
+    top: 48px;
+    left: 0;
+    width: 230px;
+}
+
+#menu>li:hover>a {
+    background-color: #5C5C5C;
+}
+
+#menu>li:hover>ul.dropdown_menu {
+    z-index: 100;
+    display: block;
+}
+
+ul.dropdown_menu>li>ul.submenu {
+    position: absolute;
+    display: none;
+    left: 145px;
+    list-style: none;
+    width: 300px;
+}
+
+ul.dropdown_menu>li:hover>a {
+    background-color: #5C5C5C !important;
+}
+
+ul.dropdown_menu>li:hover>ul.submenu {
+    z-index: 100;
+    display: block;
+}
+
+ul.submenu>li:hover>a {
+    background-color: #5C5C5C !important;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.arrow-down {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+}
+
+.arrow-right {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+}
+
+@media screen and (max-width: 992px) {
+    body{
+        background-image: none;
+        font-size: 9px;
+    }
+    #header{
+        min-height: 50px;
+    }
+    img{
+        padding-top: 15%;
+    }
+    .topnav {
+        display: block;
+        height: 48px;
+    }
+    .topnav #menu {
+        list-style: none;
+        height: 48px;
+        display: block;
+    }
+    
+    #header #logo {
+        height: 100%;
+        float: left;
+        margin: auto 10px;
+        display: none;
+    }
+
+    #header #account {
+        float: right;
+        font-size: 9px;
+        color: black;
+        width: 30%;
+        margin: auto 10px auto auto;
+    }
+    #menu li {
+        text-align: left;
+        color: #fff;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        height: 30px;
+    }
+    
+    #menu li a {
+        text-decoration: none;
+        font-size: 10px;
+        display: block;
+        padding: 8px;
+        color: #fff;
+        background-color: #333;
+        height: 48px;
+    }
+    
+    #menu>li {
+        float: left;
+        border-right: 1px solid #fff;
+        position: relative;
+    }
+    
+    #menu>li>ul.dropdown_menu {
+        position: absolute;
+        list-style: none;
+        display: none;
+        top: 48px;
+        left: 0;
+        width: 170px;
+    }
+    
+    #menu>li:hover>a {
+        background-color: #5C5C5C;
+    }
+    
+    #menu>li:hover>ul.dropdown_menu {
+        z-index: 100;
+        display: block;
+    }
+    
+    ul.dropdown_menu>li>ul.submenu {
+        position: absolute;
+        display: none;
+        left: 110px;
+        list-style: none;
+        width: 190px;
+    }
+    
+    ul.dropdown_menu>li:hover>a {
+        background-color: #5C5C5C !important;
+    }
+    
+    ul.dropdown_menu>li:hover>ul.submenu {
+        z-index: 100;
+        display: block;
+    }
+    
+    ul.submenu>li:hover>a {
+        background-color: #5C5C5C !important;
+    }
+    
+    .arrow {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    
+    .arrow-down {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #fff;
+    }
+    
+    .arrow-right {
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid #fff;
+    }
+
+    #footer {
+        height: 20px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #fffcd5;
+        color: black;
+        text-align: center;
+        font-size: 8px;
+        padding-bottom: 4px;
+        z-index: 1000;
+    }
+}
