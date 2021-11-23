@@ -55,26 +55,6 @@ else{
     echo json_encode(['code' => 201]);
                        
 }
-// $name=$_POST['name'];
-
-// $msnv=(int)$_POST['msnv'];
-// if($msnv==null&&$msnv!=""){echo "null"; return;}
-// $chucvu=$_POST['chucvu'];
-
-// $noidung=$_POST['noidung'];
-
-// $h18h30=$_POST['h18h30'];
-// if($h18h30 != null&&$h18h30!="") $h18h30_=1; else $h18h30_=0;
-// $h20h45=$_POST['h20h45'];
-// if($h20h45 != null&&$h20h45!="") $h20h45_=1; else $h20h45_=0;
-// $h22h15=$_POST['h22h15'];
-// if($h22h15 != null&&$h22h15!="") $h22h15_=1; else $h22h15_=0;
-// $h24h00=$_POST['h24h00'];
-// if($h24h00 != null&&$h24h00!="") $h24h00_=1; else $h24h00_=0;
-// $h7h00=$_POST['h7h00'];
-// if($h7h00 != null&&$h7h00!="") $h7h00_=1; else $h7h00_=0;
-// $diadiem=$_POST['diadiem'];
-
-// $monan=$_POST['monan'];
-
-// $ghichu=$_POST['ghichu'];
+function IDnhamay($IDnhanvien){
+    $sql = "SELECT ";
+}

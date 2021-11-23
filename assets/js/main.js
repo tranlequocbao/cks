@@ -295,7 +295,7 @@ function cal() {
         } else if (tc == '20h45') {
             giotc = "<td id='18h30'></td><td id='20h45'>X</td><td id='22h15'></td id='24h00'><td></td><td id='7h00'></td>"
         } else if (tc == '22h15') {
-            giotc = "<td id='18h30'></td><td id='20h45'></td ><td id=id='22h15'>X</td><td id='24h00'></td><td id='7h00'></td>"
+            giotc = "<td id='18h30'></td><td id='20h45'></td ><td id='22h15'>X</td><td id='24h00'></td><td id='7h00'></td>"
         } else if (tc == '24h00') giotc = "<td id='18h30'> </td><td id='20h45'></td><td id='22h15'></td><td id='24h00'>X</td><td id='7h00'></td>"
         else if (tc == '7h00') giotc = "<td id='18h30'></td><td id='20h45'></td><td id='22h15'></td><td id='24h00'></td><td id='7h00'>X</td>"
 
@@ -376,6 +376,7 @@ function cal() {
     }
     this.saveToDatabase = (data) => {
         var result = 0;
+        console.log(data);
         $.ajax({
             url: 'funcPhieutangca/saveTable.php',
             dataType: 'json',

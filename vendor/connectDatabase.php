@@ -1,9 +1,9 @@
 <?php
 
-$servername = "10.40.12.6";
+$servername = "localhost";
 $database = "chukyso";
 $username = "root";
-$password = "";
+$password = "M@zda@123";
 $charset = "utf8mb4";
 
 try {
