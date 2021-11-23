@@ -1,6 +1,6 @@
 ﻿<?php
 include('dbhelp.php');
-//session_start();
+// session_start();
 $ID = $_SESSION["IDNhanVien"];
 $sql5 = "SELECT * FROM `nhanvien` WHERE IDNhanVien='$ID' ";
 $query5 = mysqli_query($connect, $sql5);
@@ -47,6 +47,9 @@ if ( $row5['IDNhomQuyen'] == 04) {
                             <li>
                                 <a href="Phieuyeucaucongviec.php">Phiếu yêu cầu công việc</a>
                             </li>
+                            <li>
+                                <a href="phieutangca.php">Phiếu tăng ca</a>
+                            </li>
                         </ul>
                         <a href="javascript:void(0)">Tạo phiếu<span class="arrow arrow-right"></span></a>
                     </li>
@@ -91,6 +94,9 @@ if ( $row5['IDNhomQuyen'] == 04) {
                             <a class="dropdown-item" href="Denghicapvattu.php">Đề nghị cấp vật tư</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="Phieuyeucaucongviec.php">Phiếu yêu cầu công việc</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="phieutangca.php">Phiếu tăng ca</a>
+                            
 
                     </div>
                 </li>

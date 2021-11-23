@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    /* background-color: aliceblue; */
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+}
+
+.table {
+    color: black;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg {
+        background-color: #fffcd5 !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+}
+
+#header {
+    left: 0px;
+}
+
+
+/* .col {
+    padding: 20px;
+} */
